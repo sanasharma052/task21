@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery - College Club</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #004080;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    nav h1 {
+      font-size: 1.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #004080;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .gallery-item {
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      background-color: white;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <h1> College Club</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Gallery Section -->
+  <div class="container">
+    <h2>Our Gallery</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="https://www.smartaboutcollege.org/wp-content/uploads/2017/11/student-studying-together.jpg" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://www.news-reporter.com/wp-content/uploads/2023/03/Study-Smarter-Not-Harder-Effective-Study-Habits-for-College-and-University-Students.jpg" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://thumbs.dreamstime.com/z/girls-college-study-together-24249157.jpg" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://d2td6mzj4f4e1e.cloudfront.net/wp-content/uploads/sites/7/2013/07/Wellington-College-Students-Studying-Laptops.jpg" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://cdn11.bigcommerce.com/s-tn86bkk28c/images/stencil/original/image-manager/resources-college-students-new.jpeg" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://miamioh.edu/fsb/_files/images/isa/generic-images/isa-generic-11.jpg" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025  College Club. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

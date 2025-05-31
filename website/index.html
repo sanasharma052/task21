@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> College Club</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #004080;
+      padding: 1rem 2rem;
+      color: white;
+    }
+
+    nav h1 {
+      font-size: 1.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('https://thumbs.dreamstime.com/z/young-multiethnical-college-students-library-studying-together-smiling-looking-book-finding-new-useful-176567991.jpg') no-repeat center center/cover;
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: blue;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero-text h2 {
+      font-size: 3rem;
+    }
+
+    .hero-text p {
+      font-size: 1.2rem;
+      margin: 1rem 0;
+    }
+
+    .hero-text button {
+      padding: 0.8rem 1.5rem;
+      background: #ffcc00;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    .hero-text button:hover {
+      background: #e6b800;
+    }
+
+    .about {
+      padding: 2rem;
+      background: white;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <h1> College Club</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Welcome to College Club</h2>
+      <p>Where Passion Meets Purpose</p>
+      <button onclick="showAlert()">Join Us</button>
+      <a href="contact.html">Contact</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <h3>About Our Club</h3>
+    <p>
+      College Club is a student-led organization that fosters creativity,
+      learning, and leadership. Join us for events, workshops, and fun!
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025  College Club. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function showAlert() {
+      alert("Thank you for your interest! Registration opens soon.");
+    }
+  </script>
+
+</body>
+</html>
